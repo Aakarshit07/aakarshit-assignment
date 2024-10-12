@@ -40,3 +40,33 @@ a {
     color-scheme: dark;
   }
 }
+
+
+.mainContainer {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Filter Section takes less space */
+.filterSection {
+  flex: 1;
+}
+
+/* Product List takes most of the space */
+.productList {
+  flex: 3;
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+
+  .filterSection {
+    display: none; /* Hide filter section on mobile */
+  }
+}
+
+
+
